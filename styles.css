@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    background-color: #E4F9F5;
+    text-align:center;
+    /* Below first sets the font family, but the browser first
+       tries to render the text in the Geneva font. If it doesn't have that
+       font installed, then it defaults to sans-serif. Web-safe fonts have the
+       maximum chance of getting the font rendered correctly, but it's not completely
+       safe. Use css font stack to get a list of fallbacks.*/
+    font-family: 'Merriweather', serif;
+}
+
+
+h1 {
+    margin-top: 50px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    /* Specifying 562.5% is equivalent of 90px, but it is dynamic and wisll scale as the webpage scales.
+       We get that number because 100% is the equivalent of 16px. So, 90/16 is 5.625 then that * 100 gives you
+       the equivalent.
+       
+       Another thing to use for font scalability is em. Em, pronounced M, was the width of one capital M back in
+       typesetting days. 1em is the equivalent of 16px which is equivalent of 100%* so, 90px is the equivalent
+       of 5.625em
+       
+       Using this way of specifying the text on our webpage can help people with accessibility issues. If they set
+       the text size of their browsers to smaller or larger then it will scale appropriately.
+       
+       When we use em our font-size is inherited. So, if I specify 2em in the body, and then 5.625em on the h1, that
+       5.625em gets added onto our 2em and it becomes huge. You would have to take that 2 off the 5.625 so h1 would be 3.625em.
+       
+       To keep this from happening, you can use rem which means root em and it will ignore any font-size set in the parent.
+       */
+    font-size: 5.625rem;
+    color: #66BFBF;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #66BFBF;
+
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+
+.top-container {
+    /* Setting the position to relative, and the cloud contents to absolute
+       means that the clouds are positioned relative to the top container. */
+    position: relative;
+    padding-top: 100px;
+    margin: 0;
+    background-color: #E4F9F5;
+}
+
+#hello {
+    /* Setting the width to ten percent undoes the text-align in the body
+       making the h1 align left again. But, by setting the margin one the left and right to 
+       auto it centers again. */
+    /* margin: 100px auto 20px auto;  */
+    
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.middle-container {
+
+}
+
+.bottom-container {
+
+}
+
+.skillPic {
+    height: 200px;
+    width: 200px;
+}
+
+.programmer {
+    font-weight: normal;
+}
