@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: #E4F9F5;
     text-align:center;
     /* Below first sets the font family, but the browser first
        tries to render the text in the Geneva font. If it doesn't have that
@@ -54,15 +53,16 @@ h3 {
     padding-top: 100px;
     margin: 0;
     background-color: #E4F9F5;
+    
 }
-
-#hello {
+/* #hello */
+ /* { */
     /* Setting the width to ten percent undoes the text-align in the body
        making the h1 align left again. But, by setting the margin one the left and right to 
        auto it centers again. */
     /* margin: 100px auto 20px auto;  */
     
-}
+/* } */
 
 .pro {
     text-decoration: underline;
@@ -80,19 +80,112 @@ h3 {
     top: 50px;
 }
 
+.profile {
+    width: 50%;
+    margin: 70px auto;
+    line-height: 2;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
 .middle-container {
+    color: #40514E;
+    background-color: white;
 
 }
 
+.skills {
+    margin-top: 70px;
+}
+
 .bottom-container {
+    background-color: #66BFBF;
+    height: 150px;
+    padding-top: 50px;
 
 }
 
 .skillPic {
-    height: 200px;
-    width: 200px;
+    width: 25%;
+    float: left;
+    margin-right: 30px;
 }
+
+.skillPic2 {
+    float: right;
+    margin-left: 30px;
+    width: 25%;
+}
+
+.profilePic{
+    margin-top: 70px;
+    width: 25%;
+}
+
+/* .clearDemo{
+    clear: left;
+} */
 
 .programmer {
     font-weight: normal;
 }
+
+hr {
+  border-color: #EAF6F6;
+  border-style: dotted none none;
+  border-width: 8px;
+  width: 5%;
+}
+
+.contact-me{
+    width: 50%;
+   margin: auto;
+}
+
+.btn {
+    background: #11999E;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: 100;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 20px 0 #000000;
+    -moz-box-shadow: 1px 1px 20px 0 #000000;
+    box-shadow: 1px 1px 20px 0 #000000;
+    text-shadow: 1px 1px 20px #000000;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 70px auto 70px auto;
+ }
+ 
+ .btn:hover {
+    border: solid #66BFBF 1px;
+    background: #66BFBF;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+
+ .footer-link{
+     color: #11999E;
+     padding: 15px;
+     text-decoration: none;
+     font-family: 'Montserrat' sans-serif;
+ }
+
+ .copyright{
+     color: #EAF6F6;
+     font-size: small;
+     padding-top: 30px;
+ }
+
+ 
